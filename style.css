@@ -28,23 +28,31 @@ body {
     animation: fadeIn 0.8s ease;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
     .container {
-        margin: 0 16px;
-        padding: 28px 20px;
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 22px;
+        border-radius: 16px;
     }
 
     .container h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .container p {
-        font-size: 13px;
+        font-size: 14px;
+        margin-bottom: 24px;
     }
 
     .links a {
-        padding: 15px;
-        font-size: 15px;
+        font-size: 16px;
+        padding: 16px;
+        border-radius: 14px;
     }
 }
 
@@ -119,3 +127,4 @@ body {
         transform: translateY(0);
     }
 }
+
