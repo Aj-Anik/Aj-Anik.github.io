@@ -116,6 +116,17 @@ body::before {
   color: var(--accent);
 }
 
+.link img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+  transition: 0.2s ease;
+}
+
+.link:hover img {
+  filter: none;
+}
+
 .footer {
   margin-top: 18px;
   font-size: 0.75rem;
@@ -126,4 +137,41 @@ body::before {
   0% { transform: translate(0,0); }
   50% { transform: translate(70px,-50px); }
   100% { transform: translate(0,0); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .card {
+    width: 92%;
+    padding: 24px;
+  }
+
+  .profile-layout {
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+  }
+
+  .profile-right {
+    text-align: center;
+  }
+
+  .profile-right h1 {
+    white-space: normal;
+    font-size: 1.4rem;
+  }
+
+  .profile-left img {
+    width: 120px;
+    height: 120px;
+  }
+}
+body {
+  animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
